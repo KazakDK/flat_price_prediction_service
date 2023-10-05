@@ -1,6 +1,5 @@
 numpy
 pandas
-statsmodels
 scikit-learn
 Pillow
 streamlit
