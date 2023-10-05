@@ -1,3 +1,4 @@
 scikit-learn
+sklearn
 category_encoders
 pandas>2
