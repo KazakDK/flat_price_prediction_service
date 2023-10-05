@@ -93,7 +93,7 @@ with open('model.pickle','rb') as file:
 with open('encoder.pickle','rb') as file:
     encoder = pd.read_pickle(file)
 with open('scal.pickle','rb') as file:
-    scal = load(file)
+    scal = pd.read_pickle(file)#load(file)
 
 encoded_res = encoder.transform(res_df)
 scaled_res = scal.transform(encoded_res)
