@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 from pickle import load
+import sklearn
 
 
 first_img = Image.open('domik.jpeg')
@@ -89,7 +90,7 @@ st.write(res_df)
 
 
 with open('model.pickle','rb') as file:
-    model = load(file)
+    model = pd.read_pickle(file)#load(file)
 with open('encoder.pickle','rb') as file:
     encoder = pd.read_pickle(file)
 with open('scal.pickle','rb') as file:
