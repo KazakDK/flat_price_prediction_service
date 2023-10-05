@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 from pickle import load
-import sklearn
 
 
 first_img = Image.open('domik.jpeg')
