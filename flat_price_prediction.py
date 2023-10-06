@@ -95,4 +95,4 @@ with open('scal.pickle','rb') as file:
 encoded_res = encoder.transform(res_df)
 scaled_res = scal.transform(encoded_res)
 overall_pred = model.predict(scaled_res)
-st.write(f'Стоимость квартиры вашей мечты: {overall_pred[0] * 1000000}')
+st.write(f'Стоимость квартиры вашей мечты: {int(overall_pred[0] * 1000000)}')
