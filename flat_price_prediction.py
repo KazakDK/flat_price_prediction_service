@@ -53,9 +53,6 @@ house_floors = st.sidebar.slider('Этажность дома', min_value=round(
 
 elevator = st.sidebar.selectbox('Наличие лифта', sorted(df['elevator'].unique()))
 
-latitude = st.sidebar.text_input('Широта')
-longitude = st.sidebar.text_input('Долгота')
-
 center_distance = st.sidebar.slider('Расстояние до центра', min_value=round(df['center_distance'].min()),
                              max_value=round(df['center_distance'].max()),
                              value=round(df['center_distance'].min()), step=1)
@@ -73,8 +70,8 @@ guest_data = {
 'house_series': house_series,
 'house_floors': float(house_floors),
 'elevator': elevator,
-'latitude': float(latitude.replace('','55.719597')),
-'longitude': float(longitude.replace('','55.719597')),
+'latitude': float('55.719597'),
+'longitude': float('55.719597'),
 'center_distance': float(center_distance)
 }
 
